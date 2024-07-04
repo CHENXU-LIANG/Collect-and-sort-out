@@ -86,23 +86,19 @@ JP_Filter = NameRegex, FilterKey = "Japan"
 
 [Rule]
 # 本地规则
-DOMAIN,stream1.misakaf.org,Emby
-DOMAIN,stream2.misakaf.org,Emby
-DOMAIN,stream3.misakaf.org,Emby
-DOMAIN,stream4.misakaf.org,Emby
-DOMAIN-KEYWORD,misakaf.org,Emby
-DOMAIN,btepdc.lol,DIRECT
-DOMAIN,gitlab.com,DIRECT
-DOMAIN,naiixi.com,DIRECT
 FINAL,Available
 
 [Remote Rule]
 # 规则集
+https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/LAN, policy=DIRECT, tag=LAN, enabled=true
+
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, tag=Apple, enabled=true
 
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple_Domain.list, policy=DIRECT, tag=Apple_Domain, enabled=true
 
-https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/LAN, policy=DIRECT, tag=LAN, enabled=true
+https://raw.githubusercontent.com/CHENXU-LIANG/Collect-and-sort-out/main/自定义规则?token=GHSAT0AAAAAACUNVYX7REKGYF7W733VJWX4ZUGTKYA, policy=DIRECT, tag=自定义规则, enabled=true
+
+https://raw.githubusercontent.com/CHENXU-LIANG/Collect-and-sort-out/main/Emby%20Misakaf?token=GHSAT0AAAAAACUNVYX6XQFEQZLMO2YSZYZGZUGTEXQ, policy=Emby, tag=Emby Misakaf, enabled=true
 
 https://whatshub.top/rule/ASN-CN.list, policy=DIRECT, tag=ASN-CN, enabled=true
 
@@ -114,9 +110,9 @@ https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/CN_REGION, poli
 
 [Plugin]
 # 插件
-https://raw.githubusercontent.com/CHENXU-LIANG/Collect-and-sort-out/main/站酷?token=GHSAT0AAAAAACUNVYX7YNQPZS4XYRF3K3LGZUGSIZQ, tag=站酷去开屏广告, enabled=true
-
 https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Block_HTTPDNS.plugin, enabled=true
+
+https://raw.githubusercontent.com/CHENXU-LIANG/Collect-and-sort-out/main/站酷?token=GHSAT0AAAAAACUNVYX7YNQPZS4XYRF3K3LGZUGSIZQ, tag=站酷去开屏广告, enabled=true
 
 https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Taobao_remove_ads.plugin, tag=淘宝去广告, enabled=true
 
@@ -133,7 +129,7 @@ https://whatshub.top/plugin/Emby.plugin, tag=Emby, enabled=true
 https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/Prevent_DNS_Leaks.plugin, policy=Available, enabled=true
 
 [Mitm]
-hostname = 
+hostname =
 ca-p12 = 
 ca-passphrase = 
 skip-server-cert-verify = false
