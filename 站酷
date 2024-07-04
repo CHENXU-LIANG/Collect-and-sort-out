@@ -1,5 +1,7 @@
 #!name = 站酷去开屏广告
 #!icon = https://raw.githubusercontent.com/CHENXU-LIANG/icon/main/站酷.png?token=GHSAT0AAAAAACUNVYX7QT7BSY7EI7BHVCHSZUGR6VA
+#!author = CHENXU-LIANG
+#!homepage = https://github.com/CHENXU-LIANG?tab=repositories
 
 [Rewrite]
 ^https:\/\/api\.zcool\.com\.cn\/v\d\.\d\.\d/common\/open-screen reject-dict
